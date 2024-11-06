@@ -12,17 +12,17 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-          <a class="navbar-brand" href="#">Navbar w/ text</a>
+          <a class="navbar-brand" href="#">Your Name</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Work</a>
+                <a class="nav-link active" aria-current="page" href="#works">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
@@ -52,13 +52,12 @@
        <!-- banner -->
       <!-- swiper -->
        <div>
-        <div class="container py-5">
+        <div class="container py-5 d-none">
           <h4 class="pb-3 border-bottom border-2 mb-4">Projects</h4>
           <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner container">
+            <div class="carousel-inner">
               <div class="carousel-item active">
                 <!-- <img src="..." class="d-block w-100" alt="..."> -->
-                 <div class="container">
                   <div class="row">
                     <div class="col-lg-4">
                       <img src="./assets/images/projects/Rectangle 1.png" alt="">
@@ -70,9 +69,8 @@
                       <img src="./assets/images/projects/Rectangle 3.png" alt="">
                     </div>
                   </div>
-                 </div>
               </div>
-              <div class="carousel-item container">
+              <div class="carousel-item">
                 <!-- <img src="..." class="d-block w-100" alt="..."> -->
                 <div class="row">
                   <div class="col-lg-4">
@@ -111,11 +109,48 @@
             </button>
           </div>
          </div>
+         <!-- mobile view -->
+         <div class="container py-5" id="projects">
+          <h4 class="pb-3 border-bottom border-2 mb-4">Projects</h4>
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <img src="./assets/images/projects/Rectangle 1.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <img src="./assets/images/projects/Rectangle 2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <img src="./assets/images/projects/Rectangle 3.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+         </div>
        </div>
 
 
       <!-- swiper -->
-      <div class="container py-5">
+      <div class="container py-5" id="works">
         <h4 class="pb-3 border-bottom border-2 mb-4">About Me</h4>
         <p>
           I'm a product designer working on various projects on a wide range of clients. My skillset lies on creating branding packages & websites to deliver the full online experience for new and also veteran businesses.  You can often find me creating videos about design over on YouTube, or sharing my thoughts on my podcast, Dialogue With Designers . I'm passionate about giving back and teaching what I know to the next generation of designers.‍
