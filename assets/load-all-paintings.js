@@ -16,7 +16,7 @@ for(let i=0; i<39;i++){
     });
 }
 
-const worksContainerEl = document.getElementById('paintings-works');
+// const worksContainerEl = document.getElementById('paintings-works');
 const allWorksContainerEl = document.getElementById('all-paintings-works');
 
 
@@ -37,7 +37,7 @@ function createGridElement( gridWidth, extraClass ) {
 function createImageGrid(imgPath){
     // create an image element inside grid
     // create grid element
-    const itemEl = createGridElement('4', 'mt-4');
+    const itemEl = createGridElement('6', 'mt-5');
     //create image element
     const imgEl = createImageElement(imgPath);
     //append image inside grid
@@ -45,24 +45,18 @@ function createImageGrid(imgPath){
     return itemEl;
 }
 //load all paintings
-function renderPaintings(all=false){
+function renderPaintings(all=true){
     let workItems = paintingsWorks;
-    if(all == false){
-        workItems = paintingsWorks.slice(0,8);  
-    }
+
     for(let i=0;i<workItems.length;i++){
         const imgPath = paintingsWorks[i].path;
         const imgGridEl = createImageGrid(imgPath);
         //append image grid to all works container element
-        if(all){
-            allWorksContainerEl.appendChild(imgGridEl);
-        }else if(all === false){
-            worksContainerEl.appendChild(imgGridEl);
-        }
+        allWorksContainerEl.appendChild(imgGridEl);
     }
 }
 renderPaintings();
-renderPaintings(all=true);
+// renderPaintings(all=true);
 // paintingsWorks.forEach(item =>{
 //     // create grid element
 //     const itemEl = createGridElement('4', 'mt-4');
