@@ -31,7 +31,8 @@ function createImageElement(imgPath){
 function createGridElement( gridWidth, extraClass ) {
     //create grid element
     const itemEl = document.createElement("div");
-    itemEl.classList.add('col-lg-' + gridWidth, extraClass);
+    itemEl.classList.add('col-lg-' + gridWidth);
+    itemEl.classList.add(extraClass);
     return itemEl;
 }
 function createImageGrid(imgPath){
@@ -40,6 +41,7 @@ function createImageGrid(imgPath){
     const itemEl = createGridElement('6', 'mt-5');
     //create image element
     const imgEl = createImageElement(imgPath);
+    imgEl.classList.add('shadow-sm','border');
     //append image inside grid
     itemEl.appendChild(imgEl);
     return itemEl;

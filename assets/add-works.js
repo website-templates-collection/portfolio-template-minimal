@@ -48,7 +48,7 @@ function createImageGrid(imgPath){
 function renderPaintings(all=false){
     let workItems = paintingsWorks;
     if(all == false){
-        workItems = paintingsWorks.slice(0,8);  
+        workItems = paintingsWorks.slice(0,9);  
     }
     for(let i=0;i<workItems.length;i++){
         const imgPath = paintingsWorks[i].path;
